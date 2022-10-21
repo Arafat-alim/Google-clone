@@ -11,7 +11,7 @@ function Search({ hideButton = false }) {
   // creating a state
   const [text, setText] = useState("");
   const history = useHistory();
-  const [{}, dispatch] = useStateValue();
+  const [{ term = "Tesla" }, dispatch] = useStateValue();
 
   //function call
   function search(e) {
